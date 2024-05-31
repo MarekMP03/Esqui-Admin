@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consulta de Tarjeta</title>
+    <script>
+        window.onload = function() {
+            document.getElementById('idTarjeta').focus();
+        };
+    </script>
+
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightslategray;
+}
+
+    .container {
+    text-align: center;
+}
+
+    .icono-ok img {
+    width: 100px; /* ajusta el tamaño según sea necesario */
+    height: auto; /* mantiene la proporción de la imagen */
+}
+
+    .texto {
+        color: white;
+        font-size: 50px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2>Por favor pasar la tarjeta por el lector</h2>
+    <form action="torno.php" method="POST">
+        ID de Tarjeta: <input type="text" name="idTarjeta" id="idTarjeta">
+        <input type="submit" value="Consultar">
+    </form>
+</div>
+</body>
+</html>
